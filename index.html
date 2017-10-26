@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Framing Device</title>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+      </script>
+      <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/gifshot/0.3.2/gifshot.min.js'></script>
+      <script src="app.js"></script>
+  </head>
+
+  <body>
+    <h1>Framing Device</h1>
+
+    <form>
+      <div>
+        <label for="interval">Interval: How long (in seconds) should each frame be shown?</label>
+        <input type="number" name="interval"></input>
+      </div>
+      <div>
+        <label for="width">Width: How wide (in pixels) should the GIF be?</label>
+        <input type="number" name="width"></input>
+      </div>
+      <div>
+        <label for="height">Height: How tall (in pixels) should the GIF be?</label>
+        <input type="number" name="height"></input>
+      </div>
+
+      <div>
+        <input type="file" name="frames" multiple="multiple" id="upload">
+      </div>
+    </form>
+
+    <button id="submit">Create GIF</button>
+
+    <div id="result"></div>
+
+    <div id="frames_list"></div>
+  </body>
+</html>
